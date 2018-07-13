@@ -1,0 +1,40 @@
+2018-01-24 11:26:41.086832: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-01-24 11:26:41.691976: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:04:00.0
+totalMemory: 10.91GiB freeMemory: 10.75GiB
+2018-01-24 11:26:41.692074: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+/usr/local/anaconda3/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+WARNING:tensorflow:From /home/zhangcheng/alt/Deep_AS/deep_AS_model.py:54: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+/usr/local/anaconda3/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+train()
+Open log_file:  ../log_model1/log_file_data1.tab
+make database
+训练集的大小有：   1929810
+Traceback (most recent call last):
+  File "deep_AS_main.py", line 20, in <module>
+    tf.app.run()
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 48, in run
+    _sys.exit(main(_sys.argv[:1] + flags_passthrough))
+  File "deep_AS_main.py", line 16, in main
+    deep_AS_main_model.train()
+  File "/home/zhangcheng/alt/Deep_AS/deep_AS_main_model.py", line 114, in train
+    x,y,l = database(deep_AS_config.FLAGS.train_dir)
+  File "/home/zhangcheng/alt/Deep_AS/deep_AS_main_model.py", line 35, in database
+    arrayx.append(decodedic[i])
+KeyboardInterrupt
+2018-01-24 11:32:47.748616: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-01-24 11:32:48.375005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:04:00.0
+totalMemory: 10.91GiB freeMemory: 10.75GiB
+2018-01-24 11:32:48.375143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+/usr/local/anaconda3/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+WARNING:tensorflow:From /home/zhangcheng/alt/Deep_AS/deep_AS_model.py:54: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
